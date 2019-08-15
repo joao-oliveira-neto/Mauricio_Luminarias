@@ -1,0 +1,161 @@
+/*---------Formatações gerais-------------*/
+
+body, html{
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow-x:hidden;
+}
+
+/*---------fim das formatações gerais-----*/
+
+
+/*--------- Início Cabecalho -------------*/
+
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo{
+	width: 300px;
+	float: left;
+	margin-right: 7%;
+}
+
+#lamp{
+	width: 100px;
+	float: left;
+}
+nav{
+	background: #363636;
+	position: fixed;
+	/* border-bottom-right-radius: 15px; */
+	/* border-bottom-left-radius: 15px; */
+}
+nav a{
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+#linha{
+	border-bottom: 1px solid #fff;
+	width: 100%;
+	display: none;
+}
+
+#carrinho{
+	display: none;
+}
+
+#divDoCarrinho{
+	margin: 0 auto;
+}
+#carrinhoPrincipal:hover{
+	color: #a2b119e1;
+}
+
+/*--------- Fim Cabecalho -------------*/
+
+/*--------- Início Caixa Principal --------*/
+	
+#caixa{
+	background-image: url(imagens/fundo2.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat; 
+	background-position: center;
+
+	width: 100%;
+	height: 600px;
+}	
+
+#teste{
+	left:50%;
+	top: 50%;
+}
+/*--------- Fim Caixa Principal --------*/
+
+/*---------Início Rodapé -------- */
+footer{
+	text-align: center;
+	background: #363636;
+}
+footer img{
+	width: 50px;
+	margin: 10px 0 10px 0;	
+}
+
+footer a{
+	color:rgb(187, 180, 180);
+}
+
+footer a:hover{
+	color:rgb(241, 173, 24);
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+	transform: scale(1.2);
+	-webkit-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+/*---------Fim Rodapé -------- */
+
+/*Extra small devices (portrait phones, less than 576px)*/
+/*No media query for `xs` since this is the default in Bootstrap*/
+/*Extra small -
+<576px	Small -sm
+≥576px	Medium -md
+≥768px	Large	-lg
+≥992px	Extra large -xl
+≥1200px*/
+
+@media (max-width: 576px) { 
+	#lamp{
+		display: none;
+	}
+	#linha{
+		display: block;
+	}
+	#carrinho{
+		display: block;
+	}
+	#carrinhoPrincipal{
+		display: none;
+	}
+
+ }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) { 
+	#lamp{
+		display: none;
+	}
+
+ }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) { 
+	#lamp{
+		display: none;
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1999px) { 
+	#lamp{
+		display: none;
+	}
+
+ }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+	#lamp{
+		display: block;
+	}
+ }
